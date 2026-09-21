@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About | RandA Tours Sri Lanka</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RandA Tours Sri Lanka — private journeys, inbound tours, trekking, wildlife and tailored holidays across Sri Lanka.">
+<meta name="theme-color" content="#123f73">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif']
+      },
+      colors: {
+        brand: {
+          50: '#eff8ff',
+          100: '#dff1ff',
+          200: '#b8e2ff',
+          300: '#83cdff',
+          400: '#45b0f4',
+          500: '#1976d2',
+          600: '#1461b0',
+          700: '#124c8d',
+          800: '#123f73',
+          900: '#122f52'
+        },
+        sand: '#f8f3e8',
+        ink: '#0b1f33'
+      },
+      boxShadow: {
+        soft: '0 16px 50px rgba(10, 42, 72, .10)',
+        card: '0 12px 30px rgba(10, 42, 72, .08)'
+      }
+    }
+  }
+}
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+
+<style>
+html { scroll-behavior: smooth; }
+body { background: #fbfcfe; color: #0b1f33; }
+.hero-gradient { background: radial-gradient(circle at 10% 20%, rgba(69,176,244,.28), transparent 36%), linear-gradient(135deg, #062139 0%, #123f73 55%, #1976d2 100%); }
+.image-overlay { background: linear-gradient(180deg, rgba(5,23,38,.05), rgba(5,23,38,.78)); }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.nav-link.active { color: #123f73; background: #eef7ff; border-radius: 12px; }
+.marquee { animation: drift 18s linear infinite; }
+@keyframes drift { 0% { transform: translateX(0); } 100% { transform: translateX(-25%); } }
+</style>
+
+</head>
+<body>
+
+<header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl border border-white/40 bg-white/92 px-4 py-3 shadow-soft backdrop-blur-xl">
+      <div class="flex items-center justify-between gap-6">
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+          <img src="assets/ra-logo.png" alt="RandA Tours logo" class="h-12 w-auto rounded-xl">
+          <div class="hidden sm:block">
+            <div class="font-display text-xl font-bold text-ink leading-none">RandA Tours</div>
+            <div class="mt-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-600">Explore Sri Lanka</div>
+          </div>
+        </a>
+        <button data-nav-toggle aria-expanded="false" class="rounded-xl border border-slate-200 p-2.5 text-slate-700 md:hidden">
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+        <nav data-nav class="hidden absolute left-4 right-4 top-[78px] rounded-2xl border border-slate-200 bg-white p-4 shadow-card md:static md:block md:border-0 md:p-0 md:shadow-none">
+          <div class="flex flex-col gap-2 md:flex-row md:items-center md:gap-1">
+            <a href="index.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">About</a>
+            <a href="tour-packages.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Tour Packages</a>
+            <a href="srilanka.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Sri Lanka</a>
+            <a href="services.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Services</a>
+            <a href="contact.html" class="ml-0 rounded-xl bg-brand-700 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand-700/20 hover:bg-brand-800 md:ml-2">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="relative overflow-hidden pt-28">
+  <div class="absolute inset-0">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20.jpg" alt="Sigiriya Rock Fortress" class="h-full w-full object-cover">
+    <div class="absolute inset-0 image-overlay"></div>
+  </div>
+  <div class="relative mx-auto flex min-h-[78vh] max-w-7xl items-end px-4 pb-20 pt-16 sm:px-6 lg:px-8">
+    <div class="max-w-3xl text-white reveal">
+      <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
+        <span class="h-2 w-2 rounded-full bg-sky-300"></span> Inbound Tours · Sri Lanka
+      </div>
+      <h1 class="font-display text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl">Travel deeper.<br><span class="text-sky-200">Feel Sri Lanka.</span></h1>
+      <p class="mt-6 max-w-2xl text-base leading-8 text-slate-100 sm:text-lg">Private journeys, cultural discoveries, wildlife escapes, mountain adventures and beach time — thoughtfully arranged by RandA Tours.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="tour-packages.html" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-brand-800 shadow-xl hover:bg-slate-50">Explore Tour Packages <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/40 bg-white/10 px-6 py-3.5 font-bold text-white backdrop-blur-sm hover:bg-white/15">Plan My Trip</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative -mt-8 z-10">
+  <div class="mx-auto grid max-w-7xl gap-3 px-4 sm:grid-cols-3 sm:px-6 lg:px-8">
+    <div class="rounded-2xl border border-slate-100 bg-white p-6 shadow-card reveal">
+      <div class="text-3xl font-extrabold text-brand-700">2017</div>
+      <div class="mt-1 text-sm text-slate-500">Established as a Sri Lanka tour operator</div>
+    </div>
+    <div class="rounded-2xl border border-slate-100 bg-white p-6 shadow-card reveal">
+      <div class="text-3xl font-extrabold text-brand-700">Tailored</div>
+      <div class="mt-1 text-sm text-slate-500">Private itineraries for couples, families & groups</div>
+    </div>
+    <div class="rounded-2xl border border-slate-100 bg-white p-6 shadow-card reveal">
+      <div class="text-3xl font-extrabold text-brand-700">Local</div>
+      <div class="mt-1 text-sm text-slate-500">Professional guides and on-the-ground support</div>
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+  <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+    <div class="reveal">
+      <div class="text-xs font-bold uppercase tracking-[0.24em] text-brand-600">About RandA Tours</div>
+      <h2 class="mt-3 font-display text-4xl font-bold text-ink sm:text-5xl">A local team built around <span class="text-brand-700">your story.</span></h2>
+    </div>
+    <div class="reveal space-y-5 text-base leading-8 text-slate-600">
+      <p>RandA Tours was founded to provide safe, in-depth information and wonderful explanations of Sri Lanka, together with opportunities to explore its mystery and history.</p>
+      <p>We specialize in tours and treks across Sri Lanka, supported by professional staff, tour guides, trekking guides and Buddhist professionals with years of tourism experience.</p>
+      <p>Alongside classic holidays, we arrange active experiences such as rafting, mountain biking and wildlife safaris. Our approach is simple: every program is checked, double-checked and shaped around the people who travel with us.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+      <div class="reveal">
+        <div class="text-xs font-bold uppercase tracking-[0.24em] text-brand-700">Why travel with us</div>
+        <h2 class="mt-2 font-display text-4xl font-bold text-ink">You are somebody special.</h2>
+      </div>
+      <p class="max-w-xl text-sm leading-7 text-slate-600 reveal">Not just a tourist, client or guest. RandA is designed around personal attention, comfort, safety and the small details that turn a trip into a story worth retelling.</p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-2xl bg-white p-6 shadow-card reveal"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="shield-check" class="h-5 w-5"></i></div><h3 class="mt-5 font-bold">Safety first</h3><p class="mt-2 text-sm leading-6 text-slate-600">Practical planning and dependable local support throughout your journey.</p></div><div class="rounded-2xl bg-white p-6 shadow-card reveal"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="sparkles" class="h-5 w-5"></i></div><h3 class="mt-5 font-bold">Quality services</h3><p class="mt-2 text-sm leading-6 text-slate-600">Thoughtful hotels, guides, transport and arrangements matched to your needs.</p></div><div class="rounded-2xl bg-white p-6 shadow-card reveal"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="map-pinned" class="h-5 w-5"></i></div><h3 class="mt-5 font-bold">Local knowledge</h3><p class="mt-2 text-sm leading-6 text-slate-600">Culture, nature, food and places are connected by people who know the island.</p></div><div class="rounded-2xl bg-white p-6 shadow-card reveal"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="heart-handshake" class="h-5 w-5"></i></div><h3 class="mt-5 font-bold">Personal care</h3><p class="mt-2 text-sm leading-6 text-slate-600">From the smallest detail to the largest request, your program stays personal.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+  <div class="grid gap-8 lg:grid-cols-[1.1fr_.9fr]">
+    <div class="reveal overflow-hidden rounded-3xl">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara_Eliya_Tea.jpg" alt="Tea country in Nuwara Eliya" class="h-[420px] w-full object-cover">
+    </div>
+    <div class="flex flex-col justify-center reveal">
+      <div class="text-xs font-bold uppercase tracking-[0.24em] text-brand-600">Our promise</div>
+      <blockquote class="mt-4 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">“Happiness is core Values we like to create for the Tourists.”</blockquote>
+      <p class="mt-6 text-sm leading-7 text-slate-600">From individual travelers to families and groups, our aim is to make every stay comfortable, well organized and rich in local experience.</p>
+      <a href="services.html" class="mt-7 inline-flex w-fit items-center gap-2 font-bold text-brand-700 hover:text-brand-900">Discover our services <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="hero-gradient overflow-hidden">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid items-center gap-8 lg:grid-cols-[1fr_auto]">
+      <div class="reveal text-white">
+        <div class="text-xs font-bold uppercase tracking-[0.24em] text-sky-200">Start your journey</div>
+        <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">Tell us what you want to experience.</h2>
+        <p class="mt-4 max-w-2xl text-slate-200">Beach. Hills. Ancient cities. Wildlife. Food. Culture. Adventure. We’ll shape the route around your time and travel style.</p>
+      </div>
+      <a href="contact.html" class="reveal inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-brand-800 hover:bg-slate-50">Request a Quote <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#081827] text-white">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-[1.2fr_.8fr_.8fr]">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/ra-logo.png" alt="RandA Tours" class="h-12 w-12 rounded-xl bg-white p-1">
+          <div>
+            <div class="font-display text-2xl font-bold">RandA Tours</div>
+            <div class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-200">Explore Sri Lanka</div>
+          </div>
+        </div>
+        <p class="mt-5 max-w-xl text-sm leading-7 text-slate-300">Personalized Sri Lanka journeys built around comfort, local insight, nature, culture, adventure and the details that make a holiday memorable.</p>
+        <p class="mt-5 text-sm font-semibold text-white">“Happiness is core Values we like to create for the Tourists.”</p>
+      </div>
+      <div>
+        <div class="text-sm font-bold uppercase tracking-[0.18em] text-sky-200">Explore</div>
+        <div class="mt-4 space-y-3 text-sm text-slate-300">
+          <a href="tour-packages.html" class="block hover:text-white">Tour Packages</a>
+          <a href="srilanka.html" class="block hover:text-white">Sri Lanka</a>
+          <a href="services.html" class="block hover:text-white">Services</a>
+          <a href="contact.html" class="block hover:text-white">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="text-sm font-bold uppercase tracking-[0.18em] text-sky-200">Contact</div>
+        <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
+          <div>548/10, Battaramulla, Sri Lanka</div>
+          <div><a href="tel:+94112784312" class="hover:text-white">+94 11 278 4312</a></div>
+          <div><a href="mailto:randatourscolombo@gmail.com" class="hover:text-white">randatourscolombo@gmail.com</a></div>
+          <div><a href="https://wa.me/947767033546" target="_blank" rel="noopener" class="hover:text-white">WhatsApp +94 776 703 3546</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div>© <span data-year></span> RandA Tours. All rights reserved.</div>
+      <div>Government-licensed tour operator · Licence No. W.D.16458</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

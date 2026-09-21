@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us | RandA Tours Sri Lanka</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RandA Tours Sri Lanka — private journeys, inbound tours, trekking, wildlife and tailored holidays across Sri Lanka.">
+<meta name="theme-color" content="#123f73">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif']
+      },
+      colors: {
+        brand: {
+          50: '#eff8ff',
+          100: '#dff1ff',
+          200: '#b8e2ff',
+          300: '#83cdff',
+          400: '#45b0f4',
+          500: '#1976d2',
+          600: '#1461b0',
+          700: '#124c8d',
+          800: '#123f73',
+          900: '#122f52'
+        },
+        sand: '#f8f3e8',
+        ink: '#0b1f33'
+      },
+      boxShadow: {
+        soft: '0 16px 50px rgba(10, 42, 72, .10)',
+        card: '0 12px 30px rgba(10, 42, 72, .08)'
+      }
+    }
+  }
+}
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+
+<style>
+html { scroll-behavior: smooth; }
+body { background: #fbfcfe; color: #0b1f33; }
+.hero-gradient { background: radial-gradient(circle at 10% 20%, rgba(69,176,244,.28), transparent 36%), linear-gradient(135deg, #062139 0%, #123f73 55%, #1976d2 100%); }
+.image-overlay { background: linear-gradient(180deg, rgba(5,23,38,.05), rgba(5,23,38,.78)); }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.nav-link.active { color: #123f73; background: #eef7ff; border-radius: 12px; }
+.marquee { animation: drift 18s linear infinite; }
+@keyframes drift { 0% { transform: translateX(0); } 100% { transform: translateX(-25%); } }
+</style>
+
+</head>
+<body>
+
+<header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl border border-white/40 bg-white/92 px-4 py-3 shadow-soft backdrop-blur-xl">
+      <div class="flex items-center justify-between gap-6">
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+          <img src="assets/ra-logo.png" alt="RandA Tours logo" class="h-12 w-auto rounded-xl">
+          <div class="hidden sm:block">
+            <div class="font-display text-xl font-bold text-ink leading-none">RandA Tours</div>
+            <div class="mt-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-600">Explore Sri Lanka</div>
+          </div>
+        </a>
+        <button data-nav-toggle aria-expanded="false" class="rounded-xl border border-slate-200 p-2.5 text-slate-700 md:hidden">
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+        <nav data-nav class="hidden absolute left-4 right-4 top-[78px] rounded-2xl border border-slate-200 bg-white p-4 shadow-card md:static md:block md:border-0 md:p-0 md:shadow-none">
+          <div class="flex flex-col gap-2 md:flex-row md:items-center md:gap-1">
+            <a href="index.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">About</a>
+            <a href="tour-packages.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Tour Packages</a>
+            <a href="srilanka.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Sri Lanka</a>
+            <a href="services.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Services</a>
+            <a href="contact.html" class="ml-0 rounded-xl bg-brand-700 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand-700/20 hover:bg-brand-800 md:ml-2">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="pt-28">
+  <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+      <div class="reveal">
+        <div class="text-xs font-bold uppercase tracking-[0.24em] text-brand-600">Contact Us</div>
+        <h1 class="mt-3 font-display text-5xl font-bold text-ink sm:text-6xl">Let’s plan your<br><span class="text-brand-700">Sri Lanka story.</span></h1>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">Send us your travel dates, group size and the places you have in mind. We’ll help turn the idea into a practical itinerary.</p>
+        <div class="mt-8 space-y-5">
+          <a href="https://wa.me/947767033546" target="_blank" rel="noopener" class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-card hover:border-brand-200">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="message-circle" class="h-5 w-5"></i></div>
+            <div><div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">WhatsApp</div><div class="mt-1 font-bold">+94 776 703 3546</div></div>
+          </a>
+          <a href="mailto:randatourscolombo@gmail.com" class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-card hover:border-brand-200">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="mail" class="h-5 w-5"></i></div>
+            <div><div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Email</div><div class="mt-1 font-bold break-all">randatourscolombo@gmail.com</div></div>
+          </a>
+          <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-card">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><i data-lucide="phone" class="h-5 w-5"></i></div>
+            <div><div class="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">Phone</div><div class="mt-1 font-bold">+94 11 278 4312 · +94 11 217 7131</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal rounded-3xl bg-white p-7 shadow-soft sm:p-9">
+        <div class="flex items-center gap-3">
+          <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-700 text-white"><i data-lucide="send" class="h-6 w-6"></i></div>
+          <div><div class="text-xs font-bold uppercase tracking-[0.18em] text-brand-600">Trip enquiry</div><div class="text-xl font-bold">Tell us about your plan</div></div>
+        </div>
+        <form class="mt-8 grid gap-5" onsubmit="event.preventDefault(); alert('Thank you. Please also contact RandA Tours on WhatsApp or email so the team can respond directly.');">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="text-sm font-semibold text-slate-700">Name<input required type="text" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3.5 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-100" placeholder="Your name"></label>
+            <label class="text-sm font-semibold text-slate-700">Email<input required type="email" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3.5 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-100" placeholder="you@example.com"></label>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="text-sm font-semibold text-slate-700">Travel dates<input type="text" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3.5 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-100" placeholder="e.g. 12–20 Nov 2026"></label>
+            <label class="text-sm font-semibold text-slate-700">Travelers<input type="number" min="1" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3.5 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-100" placeholder="2"></label>
+          </div>
+          <label class="text-sm font-semibold text-slate-700">What would you like to see?<textarea rows="5" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3.5 outline-none focus:border-brand-500 focus:ring-4 focus:ring-brand-100" placeholder="Culture, tea country, wildlife, beaches, adventure..."></textarea></label>
+          <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-700 px-5 py-3.5 font-bold text-white hover:bg-brand-800">Send Enquiry <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+          <p class="text-xs leading-5 text-slate-500">This demo form does not send email by itself. Connect it to your preferred form service or WordPress form plugin before publishing.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand py-20">
+  <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
+    <div class="reveal">
+      <div class="text-xs font-bold uppercase tracking-[0.24em] text-brand-700">Office</div>
+      <h2 class="mt-3 font-display text-4xl font-bold">RandA Tours Sri Lanka</h2>
+      <div class="mt-5 space-y-3 text-sm leading-7 text-slate-600">
+        <div><strong class="text-slate-900">Owner:</strong> M. Irfan Mohideen</div>
+        <div><strong class="text-slate-900">Address:</strong> 548/10, Battaramulla, Sri Lanka</div>
+        <div><strong class="text-slate-900">Licence:</strong> W.D.16458</div>
+      </div>
+    </div>
+    <div class="reveal rounded-3xl bg-[#081827] p-7 text-white shadow-card">
+      <div class="text-xs font-bold uppercase tracking-[0.2em] text-sky-200">Next step</div>
+      <h3 class="mt-3 font-display text-3xl font-bold">Share your dates and wish list.</h3>
+      <p class="mt-4 text-sm leading-7 text-slate-300">A good enquiry can be simple. Tell us where you are coming from, how many people are traveling, and what you want to feel during the trip.</p>
+      <a href="https://wa.me/94763786666" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-bold text-brand-800">WhatsApp +94 763 786 666 <i data-lucide="arrow-up-right" class="h-4 w-4"></i></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#081827] text-white">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-[1.2fr_.8fr_.8fr]">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/ra-logo.png" alt="RandA Tours" class="h-12 w-12 rounded-xl bg-white p-1">
+          <div>
+            <div class="font-display text-2xl font-bold">RandA Tours</div>
+            <div class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-200">Explore Sri Lanka</div>
+          </div>
+        </div>
+        <p class="mt-5 max-w-xl text-sm leading-7 text-slate-300">Personalized Sri Lanka journeys built around comfort, local insight, nature, culture, adventure and the details that make a holiday memorable.</p>
+        <p class="mt-5 text-sm font-semibold text-white">“Happiness is core Values we like to create for the Tourists.”</p>
+      </div>
+      <div>
+        <div class="text-sm font-bold uppercase tracking-[0.18em] text-sky-200">Explore</div>
+        <div class="mt-4 space-y-3 text-sm text-slate-300">
+          <a href="tour-packages.html" class="block hover:text-white">Tour Packages</a>
+          <a href="srilanka.html" class="block hover:text-white">Sri Lanka</a>
+          <a href="services.html" class="block hover:text-white">Services</a>
+          <a href="contact.html" class="block hover:text-white">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="text-sm font-bold uppercase tracking-[0.18em] text-sky-200">Contact</div>
+        <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
+          <div>548/10, Battaramulla, Sri Lanka</div>
+          <div><a href="tel:+94112784312" class="hover:text-white">+94 11 278 4312</a></div>
+          <div><a href="mailto:randatourscolombo@gmail.com" class="hover:text-white">randatourscolombo@gmail.com</a></div>
+          <div><a href="https://wa.me/947767033546" target="_blank" rel="noopener" class="hover:text-white">WhatsApp +94 776 703 3546</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div>© <span data-year></span> RandA Tours. All rights reserved.</div>
+      <div>Government-licensed tour operator · Licence No. W.D.16458</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

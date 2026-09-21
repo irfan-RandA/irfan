@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tour Packages | RandA Tours Sri Lanka</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RandA Tours Sri Lanka — private journeys, inbound tours, trekking, wildlife and tailored holidays across Sri Lanka.">
+<meta name="theme-color" content="#123f73">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif']
+      },
+      colors: {
+        brand: {
+          50: '#eff8ff',
+          100: '#dff1ff',
+          200: '#b8e2ff',
+          300: '#83cdff',
+          400: '#45b0f4',
+          500: '#1976d2',
+          600: '#1461b0',
+          700: '#124c8d',
+          800: '#123f73',
+          900: '#122f52'
+        },
+        sand: '#f8f3e8',
+        ink: '#0b1f33'
+      },
+      boxShadow: {
+        soft: '0 16px 50px rgba(10, 42, 72, .10)',
+        card: '0 12px 30px rgba(10, 42, 72, .08)'
+      }
+    }
+  }
+}
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+
+<style>
+html { scroll-behavior: smooth; }
+body { background: #fbfcfe; color: #0b1f33; }
+.hero-gradient { background: radial-gradient(circle at 10% 20%, rgba(69,176,244,.28), transparent 36%), linear-gradient(135deg, #062139 0%, #123f73 55%, #1976d2 100%); }
+.image-overlay { background: linear-gradient(180deg, rgba(5,23,38,.05), rgba(5,23,38,.78)); }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.nav-link.active { color: #123f73; background: #eef7ff; border-radius: 12px; }
+.marquee { animation: drift 18s linear infinite; }
+@keyframes drift { 0% { transform: translateX(0); } 100% { transform: translateX(-25%); } }
+</style>
+
+</head>
+<body>
+
+<header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto mt-4 max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl border border-white/40 bg-white/92 px-4 py-3 shadow-soft backdrop-blur-xl">
+      <div class="flex items-center justify-between gap-6">
+        <a href="index.html" class="flex items-center gap-3 shrink-0">
+          <img src="assets/ra-logo.png" alt="RandA Tours logo" class="h-12 w-auto rounded-xl">
+          <div class="hidden sm:block">
+            <div class="font-display text-xl font-bold text-ink leading-none">RandA Tours</div>
+            <div class="mt-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-600">Explore Sri Lanka</div>
+          </div>
+        </a>
+        <button data-nav-toggle aria-expanded="false" class="rounded-xl border border-slate-200 p-2.5 text-slate-700 md:hidden">
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+        <nav data-nav class="hidden absolute left-4 right-4 top-[78px] rounded-2xl border border-slate-200 bg-white p-4 shadow-card md:static md:block md:border-0 md:p-0 md:shadow-none">
+          <div class="flex flex-col gap-2 md:flex-row md:items-center md:gap-1">
+            <a href="index.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">About</a>
+            <a href="tour-packages.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Tour Packages</a>
+            <a href="srilanka.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Sri Lanka</a>
+            <a href="services.html" class="nav-link px-4 py-2.5 text-sm font-semibold text-slate-700 hover:text-brand-700">Services</a>
+            <a href="contact.html" class="ml-0 rounded-xl bg-brand-700 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand-700/20 hover:bg-brand-800 md:ml-2">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="pt-28">
+  <div class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="max-w-3xl reveal">
+        <div class="text-xs font-bold uppercase tracking-[0.24em] text-brand-600">Tour Packages</div>
+        <h1 class="mt-3 font-display text-5xl font-bold text-ink sm:text-6xl">Choose a route.<br><span class="text-brand-700">Make it yours.</span></h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-600">Sample itineraries for first-time visitors, repeat travelers, families and small groups. Every route can be adjusted to your dates, hotel category and interests.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+  <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    <article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-card reveal">
+        <div class="relative h-64 overflow-hidden"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20.jpg" alt="Sigiriya" class="h-full w-full object-cover transition duration-700 group-hover:scale-105"><div class="absolute inset-x-4 bottom-4 flex items-center justify-between"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-800 backdrop-blur">Cultural Escape</span><span class="rounded-full bg-brand-800/85 px-3 py-1 text-xs font-semibold text-white">5–7 Days</span></div></div>
+        <div class="p-7"><h2 class="font-display text-2xl font-bold">Ancient Sri Lanka</h2><p class="mt-3 text-sm leading-7 text-slate-600">Sigiriya, Dambulla, Kandy and the cultural heartland with time for temples, viewpoints and local experiences.</p><div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-5"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">Best for first visits</span><a href="contact.html" class="text-sm font-bold text-brand-700">Enquire →</a></div></div>
+      </article><article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-card reveal">
+        <div class="relative h-64 overflow-hidden"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_the_Tooth%2C_Kandy.jpg" alt="Kandy Temple of the Tooth" class="h-full w-full object-cover transition duration-700 group-hover:scale-105"><div class="absolute inset-x-4 bottom-4 flex items-center justify-between"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-800 backdrop-blur">Heritage Journey</span><span class="rounded-full bg-brand-800/85 px-3 py-1 text-xs font-semibold text-white">6–9 Days</span></div></div>
+        <div class="p-7"><h2 class="font-display text-2xl font-bold">Kandy & Tea Country</h2><p class="mt-3 text-sm leading-7 text-slate-600">Move from the cultural capital into the cool central highlands, tea estates and scenic mountain roads.</p><div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-5"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">Culture + hills</span><a href="contact.html" class="text-sm font-bold text-brand-700">Enquire →</a></div></div>
+      </article><article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-card reveal">
+        <div class="relative h-64 overflow-hidden"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara_Eliya_Tea.jpg" alt="Nuwara Eliya tea country" class="h-full w-full object-cover transition duration-700 group-hover:scale-105"><div class="absolute inset-x-4 bottom-4 flex items-center justify-between"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-800 backdrop-blur">Hill Country</span><span class="rounded-full bg-brand-800/85 px-3 py-1 text-xs font-semibold text-white">4–8 Days</span></div></div>
+        <div class="p-7"><h2 class="font-display text-2xl font-bold">Nuwara Eliya Escape</h2><p class="mt-3 text-sm leading-7 text-slate-600">Tea landscapes, cool evenings, waterfalls and scenic drives — designed for travelers who want a slower rhythm.</p><div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-5"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">Slow travel</span><a href="contact.html" class="text-sm font-bold text-brand-700">Enquire →</a></div></div>
+      </article><article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-card reveal">
+        <div class="relative h-64 overflow-hidden"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Leopard%2C_Yala_National_Park.jpg" alt="Yala National Park leopard" class="h-full w-full object-cover transition duration-700 group-hover:scale-105"><div class="absolute inset-x-4 bottom-4 flex items-center justify-between"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-800 backdrop-blur">Wildlife</span><span class="rounded-full bg-brand-800/85 px-3 py-1 text-xs font-semibold text-white">6–10 Days</span></div></div>
+        <div class="p-7"><h2 class="font-display text-2xl font-bold">Wildlife & South Coast</h2><p class="mt-3 text-sm leading-7 text-slate-600">Combine safari time in Yala with a relaxed southern coast stay and carefully paced road journeys.</p><div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-5"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">Nature + beach</span><a href="contact.html" class="text-sm font-bold text-brand-700">Enquire →</a></div></div>
+      </article><article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-card reveal">
+        <div class="relative h-64 overflow-hidden"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Unawatuna_Beach.jpg" alt="Sri Lanka southern coast" class="h-full w-full object-cover transition duration-700 group-hover:scale-105"><div class="absolute inset-x-4 bottom-4 flex items-center justify-between"><span class="rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-brand-800 backdrop-blur">Beach Holiday</span><span class="rounded-full bg-brand-800/85 px-3 py-1 text-xs font-semibold text-white">4–10 Days</span></div></div>
+        <div class="p-7"><h2 class="font-display text-2xl font-bold">South Coast & Galle</h2><p class="mt-3 text-sm leading-7 text-slate-600">Boutique coastal stays, Galle heritage, rivers and relaxed beach time — ideal before or after a round-island tour.</p><div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-5"><span class="text-xs font-semibold uppercase tracking-[0.15em] text-slate-500">Relax + explore</span><a href="contact.html" class="text-sm font-bold text-brand-700">Enquire →</a></div></div>
+      </article><article class="overflow-hidden rounded-3xl border border-brand-100 bg-brand-50 p-7 shadow-card reveal">
+        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-700 text-white"><i data-lucide="route" class="h-6 w-6"></i></div>
+        <h2 class="mt-6 font-display text-2xl font-bold">Bespoke Sri Lanka</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">Tell us your arrival date, number of travelers, preferred hotel style and must-see places. We’ll draft a private route around you.</p>
+        <a href="contact.html" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-brand-700 px-5 py-3 text-sm font-bold text-white hover:bg-brand-800">Build My Itinerary <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+      </article>
+  </div>
+</section>
+
+<section class="bg-[#081827] py-20 text-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+      <div class="reveal">
+        <div class="text-xs font-bold uppercase tracking-[0.24em] text-sky-200">Included on request</div>
+        <h2 class="mt-3 font-display text-4xl font-bold">Make the package fit the traveler.</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 reveal">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5"><div class="flex items-center gap-3"><i data-lucide="car-front" class="h-5 w-5 text-sky-200"></i><span class="font-semibold">Private A/C transport</span></div></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5"><div class="flex items-center gap-3"><i data-lucide="hotel" class="h-5 w-5 text-sky-200"></i><span class="font-semibold">Hotel coordination</span></div></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5"><div class="flex items-center gap-3"><i data-lucide="utensils" class="h-5 w-5 text-sky-200"></i><span class="font-semibold">Meal arrangements</span></div></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5"><div class="flex items-center gap-3"><i data-lucide="ticket" class="h-5 w-5 text-sky-200"></i><span class="font-semibold">Entrance & activity planning</span></div></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5"><div class="flex items-center gap-3"><i data-lucide="camera" class="h-5 w-5 text-sky-200"></i><span class="font-semibold">Photography-friendly routing</span></div></div><div class="rounded-2xl border border-white/10 bg-white/5 p-5"><div class="flex items-center gap-3"><i data-lucide="headphones" class="h-5 w-5 text-sky-200"></i><span class="font-semibold">English-speaking guides</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#081827] text-white">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-[1.2fr_.8fr_.8fr]">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/ra-logo.png" alt="RandA Tours" class="h-12 w-12 rounded-xl bg-white p-1">
+          <div>
+            <div class="font-display text-2xl font-bold">RandA Tours</div>
+            <div class="text-xs font-semibold uppercase tracking-[0.24em] text-sky-200">Explore Sri Lanka</div>
+          </div>
+        </div>
+        <p class="mt-5 max-w-xl text-sm leading-7 text-slate-300">Personalized Sri Lanka journeys built around comfort, local insight, nature, culture, adventure and the details that make a holiday memorable.</p>
+        <p class="mt-5 text-sm font-semibold text-white">“Happiness is core Values we like to create for the Tourists.”</p>
+      </div>
+      <div>
+        <div class="text-sm font-bold uppercase tracking-[0.18em] text-sky-200">Explore</div>
+        <div class="mt-4 space-y-3 text-sm text-slate-300">
+          <a href="tour-packages.html" class="block hover:text-white">Tour Packages</a>
+          <a href="srilanka.html" class="block hover:text-white">Sri Lanka</a>
+          <a href="services.html" class="block hover:text-white">Services</a>
+          <a href="contact.html" class="block hover:text-white">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <div class="text-sm font-bold uppercase tracking-[0.18em] text-sky-200">Contact</div>
+        <div class="mt-4 space-y-3 text-sm leading-6 text-slate-300">
+          <div>548/10, Battaramulla, Sri Lanka</div>
+          <div><a href="tel:+94112784312" class="hover:text-white">+94 11 278 4312</a></div>
+          <div><a href="mailto:randatourscolombo@gmail.com" class="hover:text-white">randatourscolombo@gmail.com</a></div>
+          <div><a href="https://wa.me/947767033546" target="_blank" rel="noopener" class="hover:text-white">WhatsApp +94 776 703 3546</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+      <div>© <span data-year></span> RandA Tours. All rights reserved.</div>
+      <div>Government-licensed tour operator · Licence No. W.D.16458</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
